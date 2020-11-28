@@ -1,0 +1,43 @@
+.origami{
+    display: flex;
+    flex-direction: row;
+    background-color: #8b008b;
+    justify-content: space-evenly;
+    margin: 20px;
+    padding: 10px;
+    font-family: fantasy;
+}
+h1{
+    padding: 20px;
+}
+
+body{
+    margin: 0px;
+}
+a:link{
+    color: steelblue;
+}
+a:visited{
+    color: steelblue;
+    text-decoration: none;
+}
+
+.origami:hover{
+    transform: scale(1.2);
+}
+.item{
+    position: relative;
+}
+.item p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+}
+.item:hover p{
+    opacity: 1;
+}
+.item:hover img{
+    opacity: 0.33;
+}
